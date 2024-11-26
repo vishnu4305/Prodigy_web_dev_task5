@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Dashboard</title>
+    <link rel="shortcut icon" href="images.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+      <div class="container">
+        <!-- Input Section -->
+        <section class="weather-input">
+          <h3>Search Weather</h3>
+          <input class="city-input" type="text" placeholder="Enter city name (e.g., New York)">
+          <button class="search-btn">Search</button>
+          <div class="separator"></div>
+          <button class="location-btn">Use Current Location</button>
+        </section>
+
+        <!-- Weather Data Section -->
+        <section class="weather-data">
+          <!-- Current Weather -->
+          <div class="current-weather">
+            <div class="details">
+              <h2>City Name (Country)</h2>
+              <p>Temperature: <span>25°C</span></p>
+              <p>Wind: <span>5 m/s</span></p>
+              <p>Humidity: <span>80%</span></p>
+            </div>
+            <div class="icon">
+              <img src="images.jpeg" alt="Weather Icon">
+              <p>Clear Sky</p>
+            </div>
+          </div>
+
+          <!-- 5-Day Forecast -->
+          <div class="days-forecast">
+            <h2>5-Day Forecast</h2>
+            <ul class="weather-cards">
+              <li class="card">
+                <h3>Day 1</h3>
+                <img src="download.jpg" alt="Forecast Icon">
+                <p>Temp: <span>22°C</span></p>
+                <p>Wind: <span>3 m/s</span></p>
+                <p>Humidity: <span>70%</span></p>
+              </li>
+              <li class="card">
+                <h3>Day 2</h3>
+                <img src="images.jpeg" alt="Forecast Icon">
+                <p>Temp: <span>24°C</span></p>
+                <p>Wind: <span>4 m/s</span></p>
+                <p>Humidity: <span>65%</span></p>
+              </li>
+              <li class="card">
+                <h3>Day 3</h3>
+                <img src="images.jpeg" alt="Forecast Icon">
+                <p>Temp: <span>26°C</span></p>
+                <p>Wind: <span>6 m/s</span></p>
+                <p>Humidity: <span>75%</span></p>
+              </li>
+              <li class="card">
+                <h3>Day 4</h3>
+                <img src="images.jpeg" alt="Forecast Icon">
+                <p>Temp: <span>28°C</span></p>
+                <p>Wind: <span>7 m/s</span></p>
+                <p>Humidity: <span>68%</span></p>
+              </li>
+              <li class="card">
+                <h3>Day 5</h3>
+                <img src="images.jpeg" alt="Forecast Icon">
+                <p>Temp: <span>30°C</span></p>
+                <p>Wind: <span>8 m/s</span></p>
+                <p>Humidity: <span>60%</span></p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
